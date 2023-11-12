@@ -1,8 +1,11 @@
 # nestjs-movie-api
 In this challenge, I have to create a Movie REST API using NestJS, a typescript framework for building efficient and scalable Node.js applications. I will be implementing CRUD operations for movies and related genres.
+
 ## Database Setup
+
 ### Prerequisites
 Before setting up the database, make sure you have [PostgreSQL](https://www.postgresql.org/) installed on your machine.
+
 ### Configuration
 Update the database connection details in the `src/ormconfig.json` file with your PostgreSQL credentials:
 ```typescript
@@ -25,6 +28,7 @@ See "create-db.sql" to learn how to create the tables I use in my application. R
 ```bash
 $ npm install
 ```
+
 ## Running the app
 ```bash
 # development
