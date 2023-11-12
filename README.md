@@ -23,8 +23,8 @@ Update the database connection details in the `src/ormconfig.json` file with you
 
 ```
 
-Remember to replace 'postgres', 'postgres', and 'cinema_catalog' with your actual PostgreSQL credentials. Feel free to adapt the commands based on the structure and specific requirements of your project. Let us know if you need further customization or clarification!
-See "create-db.sql" to learn how to create the tables I use in my application. Remember to change the db name in that file.
+Remember to replace 'postgres', 'postgres', and 'cinema_catalog' with your actual PostgreSQL credentials. Feel free to adapt the commands based on the structure and specific requirements of your project.
+See "src/create-db.sql" to learn how to create the tables I use in my application. Remember to change the db name in that file.
 
 ## Description
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
