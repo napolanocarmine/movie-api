@@ -25,7 +25,7 @@ Update the database connection details in the `src/database.config.ts` file with
 
 Remember to replace 'postgres', 'postgres', and 'cinema_catalog' with your actual PostgreSQL credentials. Feel free to adapt the commands based on the structure and specific requirements of your project. Let us know if you need further customization or clarification!
 
-See "create-tables.sql" to know how to create the tables I use into my application
+See "create-db.sql" to learn how to create the tables I use in my application. Remember to change the db name in that file.
 
 ## Description
 
