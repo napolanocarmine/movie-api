@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "dff34979-73fb-4bf3-818d-026296058b9c",
+		"name": "challenge-movie-api-calls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31066224"
+	},
+	"item": [
+		{
+			"name": "Adding a new movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\": \"Movie 1\",\r\n\"description\": \"Description for Movie 1\",\r\n\"release_date\": \"2023-01-01\",\r\n\"genres\": [\"Action\", \"Adventure\"]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/movies"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all the movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/movies"
+			},
+			"response": []
+		},
+		{
+			"name": "Update movie",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "id",
+						"value": "11",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\": \"Movie 1\",\r\n\"description\": \"Updated Description for Movie 1\",\r\n\"release_date\": \"2023-01-15\",\r\n\"genres\": [\"Action\", \"Sci-Fi\"]\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/movies/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies",
+						"1"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete movie",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": "http://localhost:3000/movies/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Add a new genre",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{ \"name\": \"Science Fiction\" }\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/genres"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all genres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/genres"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a genre",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/genres/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"genres",
+						"1"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search a film with title or genre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/movies/search?title=Movie 1&genres=Action",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies",
+						"search"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Movie 1"
+						},
+						{
+							"key": "genres",
+							"value": "Action"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
