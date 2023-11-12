@@ -49,3 +49,33 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+## Test
+
+# Movie API Postman Collection
+
+The file "challenge-movie-api-calls.postman_collection.json" contains a Postman collection with pre-configured API requests for testing the Movie API. Follow the steps below to get started.
+
+1. **Install Postman:**
+   - If you don't have Postman installed, download and install it from [Postman's official website](https://www.postman.com/downloads/).
+
+2. **Download the Collection:**
+   - Clone or download this repository to your local machine.
+
+3. **Import Collection in Postman:**
+   - Open Postman and click on the "Import" button.
+   - Select the downloaded JSON file (`movie-api.postman_collection.json`).
+
+4. **Set Environment Variables:**
+   - The collection uses environment variables for better flexibility.
+   - Click on the gear icon in the top right corner and select "Manage Environments."
+   - Import the environment file (`movie-api.postman_environment.json`).
+
+5. **Run Requests:**
+   - Open the imported collection.
+   - Choose the desired request and make sure the environment variables are set correctly.
+
+6. **Execute Requests:**
+   - Click on the "Send" button to execute the selected request.
+   - Review the response to ensure the API is working as expected.
+
