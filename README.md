@@ -4,7 +4,7 @@ In this challenge, I have to create a Movie REST API using NestJS, a typescript 
 ### Prerequisites
 Before setting up the database, make sure you have [PostgreSQL](https://www.postgresql.org/) installed on your machine.
 ### Configuration
-Update the database connection details in the `src/database.config.ts` file with your PostgreSQL credentials:
+Update the database connection details in the `src/ormconfig.json` file with your PostgreSQL credentials:
 ```typescript
 // src/ormconfig.json
 {
