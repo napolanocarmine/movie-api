@@ -13,7 +13,7 @@ Update the database connection details in the `src/ormconfig.json` file with you
     "port": 5432,
     "username": "postgres",
     "password": "postgres",
-    "database": "cinema_catalog_2",
+    "database": "cinema_catalog",
     "entities": ["dist/**/*.entity.js"],
     "synchronize": true
   }
